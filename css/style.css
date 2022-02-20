@@ -1,0 +1,27 @@
+body {
+    background-color: #006cf8;
+    color:#DBB911;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30pt;
+}
+
+header {
+    text-align: center;
+}
+
+#hero {
+    background-color: #1D80DB
+}
+
+text-align:picture-in-picture
+
+#hero img {
+    width: 300px;
+}
+
+#bio {
+    text-align: center;
+}
