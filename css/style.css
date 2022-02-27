@@ -1,19 +1,27 @@
 body {
-    background-color: #006cf8;
-    color:#DBB911;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color:#fcac00;
+    color: blueviolet;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
+}
+h1{
+    font-size: 40pt;
 }
 
 header {
-    text-align: center;
+    text-align:center;
 }
 
-#hero {
-    background-color: #1D80DB
+#hero, footer {
+    color: blueviolet;
+    border: 2px solid black;
+    background-color: rgb(255, 251, 0);
+    text-align: center;
+    padding:8px; 
 }
 
 text-align:picture-in-picture
@@ -25,3 +33,4 @@ text-align:picture-in-picture
 #bio {
     text-align: center;
 }
+
