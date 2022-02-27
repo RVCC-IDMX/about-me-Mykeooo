@@ -48,7 +48,9 @@ text-align:picture-in-picture
 /* Gallery */
 #gallery {
     border: 2px solid blue;
+    margin-bottom:2rem;
 }
+
 
 #gallery img {
     max-width:50%;
@@ -56,4 +58,35 @@ text-align:picture-in-picture
 
 #gallery figure {
     text-align:center
+}
+
+/* Literature */
+#lit {
+    border: 2px solid blue;
+    margin-bottom:2rem;
+}
+
+#lit div {
+    padding:2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+#lit div p {
+    padding: 0.5rem 0;
+    clear:both;
+}
+
+/* Dropcaps */
+
+#lit div p:nth-child(3n+1) first-letter {
+    color: red;
+    float: left;
+    font-size:3em;
+    margin-right:.25em;
+    padding:.5em;
+    line-height:.65;
+    border: 4px solid black;
+    border-top-left-radius: .2em;
+    border-bottom-right-radius: .2em;
 }
