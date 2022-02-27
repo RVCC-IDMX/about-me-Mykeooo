@@ -18,11 +18,13 @@ header {
 
 #hero, footer {
     color: blueviolet;
-    border: 2px solid black;
+    border: 2px solid blue;
     background-color: rgb(255, 251, 0);
     text-align: center;
     padding:8px; 
 }
+
+/* Hero Section*/
 
 text-align:picture-in-picture
 
@@ -30,7 +32,28 @@ text-align:picture-in-picture
     width: 300px;
 }
 
+/* Bio Section */
+
+
 #bio {
     text-align: center;
 }
 
+/* Hobbies Section */
+
+#hobbies ul li:nth-child(even) {
+    color: black;
+}
+
+/* Gallery */
+#gallery {
+    border: 2px solid blue;
+}
+
+#gallery img {
+    max-width:50%;
+}
+
+#gallery figure {
+    text-align:center
+}
