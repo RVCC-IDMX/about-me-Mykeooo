@@ -96,7 +96,7 @@ section#hobbies {
     border-top-left-radius: .2em;
     border-bottom-right-radius: .2em;
 }
-
+/* tablet size */
 @media screen and (min-width: 60em) {
 figure{
     display: grid;
@@ -109,5 +109,30 @@ figcaption{
     align-items: center;
     font-size: 2rem;
 }
+
+figure img {
+    width: 100%;
+}
+
+
+#lit div {
+    max-width: 100%;
+    columns: 20rem;
+}
+
+}
+
+/* Large screen size */
+
+@media screen and (min-width: 100em) {
+
+    #gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    hr {
+        display: none;
+    }
 
 }
