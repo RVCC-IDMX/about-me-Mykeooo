@@ -1,254 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me!</title>
-    
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#323131">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
 
-
+    <!-- Prism Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-okaidia.min.css"
+        integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Stylesheets -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
-
-
-  
-    
-
-
-
 </head>
+
 <body>
-   
+
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img class="fit-picture"
-                src="/img/logo.jpeg"
-        
-            alt="Blue origami logo">
-            <h1>Web Deb 1</h1></div>
+                <img class="fit-picture" src="/img/logo.svg" alt="Blue origami logo">
+                <h1>Web Dev 1</h1>
+            </div>
             <div class="navbar-links">
-                <ul>
+                <input type="checkbox" name="navbar__checkbox" id="navbar__checkbox" class="navbar__checkbox">
+                <label for="navbar__checkbox" class="navbar__toggle">
+                    <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                        <path
+                            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+                    </svg>
+                    <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                        <path
+                            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                    </svg>
+                </label>
+                <ul class="navbar__links">
                     <li><a href="#bio">Bio</a></li>
                     <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#lit">Blog
-
-                    </a></li>
+                    <li><a href="#lit">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
-
                 </ul>
             </div>
         </nav>
-        
+
     </header>
 
-    <main>
+    <main id="container">
 
         <section id="hero">
-            
-
-            <img class="fit-picture"
-            src="/img/avataaars.png"
-            
-            
-            alt="Avatar picture of me">
+            <img class="fit-picture" src="/img/avataaars.jpg" alt="photograph of myself">
             <div>
-                <p>Myke Melo</p>
+                <h3 class="name">Myke Melo</h3>
                 <p>Bound Brook, NJ</p>
             </div>
-    </section>
+        </section>
 
-    <h1> Biography:</h1>
+        <section id="bio">
+            <h2>Biography</h2>
 
+            <div>
+                <p>
+                    Hello my name is Myke Melo. I want to be a UX/UI designer in the near future and work with people
+                    and come up with exciting new ideas! I went to college in England for D1 but came back due to my
+                    best friend passing away and it was all just too much. So now I am pursuing something that I have
+                    always had growing up and that's technology! I am excited to learn new things and come up with new
+                    projects that display my capabilities!
+                </p>
+                <p>
+                    I am very passionate about soccer as well. I used to want to be a professional soccer player and
+                    make my parents proud like every other person! While I was in University of Chester, England I
+                    player D1 and Semi-Pro.
+                </p>
+            </div>
+        </section>
 
-
-    <section id="bio">
-
-        Hi! my name is Myke Melo!
-        I want to learn how to do basic program at first and work my way up!
-
-
-        <div>
-            <p>I want to be a professional soccer player
-                and make my parents proud like every other person!
-                I like hanging with my friends at night and watch the stars
-                at night while just starring and talking. 
-                I went to England for college my first year at The University of Chester and played D1 and Semi-pro 
-            </p>
-
-        </div>
-
-    </section>
-
-    <section id="hobbies">
-
-            <h2>Hobbies:</h2>
+        <section id="hobbies">
+            <h3>Hobbies</h3>
 
             <ul>
-                <li>Soccer!</li>
+                <li>Playing soccer and volleyball</li>
                 <li>Going on adventures!</li>
+                <li>Hanging out with my friends at night</li>
+                <li>Watch the stars at night while just starring and talking</li>
                 <li>Love traveling and want to travel the world!</li>
-                <li>Hanging out with my GirlFriend</li>
+                <li>Going out with my Girlfriend when I can</li>
+                <li>Like being outdoors and love taking stroll by the lake</li>
                 <li>spending time with my family and friends!</li>
             </ul>
+        </section>
 
-    </section>
+        <section id="gallery">
+            <h3 class="title">Photo Gallery</h3>
 
-    <section id="gallery">
-        <h2>Photo Gallery</h2>
+            <figure>
+                <img src="img/soccer-640w.jpg" alt="Playing soccer">
+                <figcaption> Playing soccer at a stadium Semi-Pro!</figcaption>
+            </figure>
 
-        <hr>
+            <figure>
+                <img src="img/adventures-640w.jpg" alt="Adventures in the summer">
+                <figcaption>Driving around in the summer time with amazning views!</figcaption>
+            </figure>
 
-        <figure>
-            <img src="img/soccer-640w.jpg" alt="Playing soccer">
-            <figcaption> Playing soccer at a stadium Semi-Pro!</figcaption>
-        </figure>
+            <figure>
+                <img src="img/greece-640w.jpg" alt="Adventures in Greece">
+                <figcaption> Soccer tournament in Greece with stunning views!</figcaption>
+            </figure>
+        </section>
 
-        <hr>
+        <article id="lit">
+            <h3 class="title">CSS Animation</h3>
 
-        <figure>
-            <img src="img/adventures-640w.jpg" alt="Adventures in the summer">
-            <figcaption>Driving around in the summer time with amazning views!</figcaption>
+            <div>
+                <p>
+                    The animation property in CSS makes it possible to animate many other CSS properties from one CSS
+                    style configuration to another. CSS animation is an effort to animate components on a web page
+                    without using processor and memory-hungry JavaScript or Flash. Each animation is composed of two
+                    components, <code class="language-css">@keyframes</code> that indicate the start and end states, as
+                    well as possible intermediate waypoints which is then described in a CSS style to be called upon
+                    some element. A very basic example of CSS animation would look something like below:
+                </p>
 
-        </figure>
+                <pre><code class="language-css">
+.element {
+    animation: pulse 5s infinite;
+}
 
-        <hr>
-        
-        <figure>
-            <img src="img/greece-640w.jpg" alt="Adventures in Greece">
-            <figcaption> Soccer tournament in Greece with stunning views!</figcaption>
-        </figure>
+@keyframes pulse {
+    0% {
+    background-color: #F8F8F8;
+    }
+    100% {
+    background-color: #323131;
+    }
+}
+                </code></pre>
 
+                <p>
+                    On above example <code class="language-css">@keyframes</code> defines states at specific moment of
+                    the animation. For example, the beginning of the animation is expressed by <code
+                        class="language-css">0%</code> and <code class="language-css">100%</code> is marking the end.
+                    CSS animation property has several additional sub-properties which gives more control over how those
+                    keyframes are being managed. These eight sub-properties can be used as shorthand too.
+                </p>
 
-    </section>
+                <p>
+                    These sub-properties and shorthand can be used interchangeably:
+                </p>
 
-    <article id="lit">
+                <pre><code class="language-css">
+@keyframes stretch {
+    /* declare animation actions here */
+}
 
-        <h2>Dr Jekyll and Mr Hyde</h2>
+/*
+    using sub-properties:
+*/
 
-        <div>
-            <p>“My will? Yes, certainly, I know that,” said the doctor, a trifle sharply. “You have told me so.”</p>
+.element {
+    animation-name: stretch;
+    animation-duration: 3s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running; 
+}
 
-            <p>“Well, I tell you so again,” continued the lawyer. “I have been learning something of young Hyde.”</p>
-            
-            <p>The large handsome face of Dr. Jekyll grew pale to the very lips, and there came a blackness about his eyes. “I do not care to hear more,” said he. “This is a matter I thought we had agreed to drop.”</p>
-            
-            <p>“What I heard was abominable,” said Utterson.</p>
-            
-            <p>“It can make no change. You do not understand my position,” returned the doctor, with a certain incoherency of manner. “I am painfully situated, Utterson; my position is a very strange--a very strange one. It is one of those affairs that cannot be mended by talking.”</p>
-            
-            <p>“Jekyll,” said Utterson, “you know me: I am a man to be trusted. Make a clean breast of this in confidence; and I make no doubt I can get you out of it.”</p>
-            
-            <p>“My good Utterson,” said the doctor, “this is very good of you, this is downright good of you, and I cannot find words to thank you in. I believe you fully; I would trust you before any man alive, ay, before myself, if I could make the choice; but indeed it isn’t what you fancy; it is not as bad as that; and just to put your good heart at rest, I will tell you one thing: the moment I choose, I can be rid of Mr. Hyde. I give you my hand upon that; and I thank you again and again; and I will just add one little word, Utterson, that I’m sure you’ll take in good part: this is a private matter, and I beg of you to let it sleep.”</p>
-            
-            <p>Utterson reflected a little, looking in the fire.</p>
+/*
+    is the same as above using shorthand:
+*/
 
+.element {
+    animation: 
+        stretch
+        3s
+        ease-out
+        1s
+        alternate
+        infinite
+        none
+        running;
+}
+                </code></pre>
 
+                <p>
+                    The sub-properties of the animation property are:
+                </p>
 
+                <ul>
+                    <li><strong>animation-name:</strong> describes the name of the <code
+                            class="language-css">@keyframes</code> at-rule specifying the animation's keyframes.</li>
+                    <li><strong>animation-duration:</strong> specifies the length of time for an animation to complete
+                        one cycle.</li>
+                    <li><strong>animation-timing-function:</strong> configures how animation transitions through
+                        keyframes with acceleration curves like linear or ease.</li>
+                    <li><strong>animation-delay:</strong> the length of time between the element is being loaded and the
+                        start of the animation sequence.</li>
+                    <li><strong>animation-iteration-count:</strong> defines the number of times the animation should be
+                        performed. Specifying <code class="language-css">{ animation-iteration-count: infinite; }</code>
+                        would repeat the animation indefinitely.</li>
+                    <li><strong>animation-direction:</strong> configures the direction of the animation. The defaults
+                        resets on each cycle.</li>
+                    <li><strong>animation-fill-mode:</strong> sets the values are applied before and after the
+                        animation.<br />
+                        For example, it is possible to set the last state remain on screen after the animation or switch
+                        back to the state that was before the animation began.
+                    </li>
+                    <li><strong>animation-play-state:</strong> determines the paly and pause state of the
+                        animation.<br />
+                        For example, setting the value running would keep the animation running.
+                    </li>
+                </ul>
 
+                <p>
+                    CSS animation property can be used to animate many other CSS properties like color, height or width.
+                </p>
 
-        </div>
+                <p>Example of CSS animation:</p>
 
-    </article>
-
-    <section id="video>"
+                <div class="animation-example">
+                    <p id="error">M<span>y</span>ke</p>
+                    <p id="code">M<span>e</span>l<span>o</span></p>
+                </div>
+                <pre><code class="language-html">
+    &lt;!-- Markup --&gt;
     
-        <h2> Short video</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/wNTcPNkzI2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    &lt;div class="animation-example"&gt;
+        &lt;p id="error"&gt;M&lt;span&gt;y&lt;/span&gt;ke&lt;/p&gt;
+        &lt;p id="code"&gt;M&lt;span&gt;e&lt;/span&gt;l&lt;span&gt;o&lt;/span&gt;&lt;/p&gt;
+    &lt;/div&gt;
+                </code></pre>
+                <pre><code class="language-css">
+    /* Styles */
+    
+    #error span {
+        animation: upper 11s linear infinite;
+    }
+    
+    #code span:nth-of-type(2) {
+        animation: lower 10s linear infinite;
+    }
+    
+    #code span:nth-of-type(1) {
+        text-shadow: none;
+        opacity: .4;
+    }
+    
+    @keyframes upper {
+    
+        0%,
+        19.999%,
+        22%,
+        62.999%,
+        64%,
+        64.999%,
+        70%,
+        100% {
+            opacity: .99;
+            text-shadow: 0 0 80px #F8F8F8, 0 0 30px #323131, 0 0 6px #0000ff;
+        }
+    
+        20%,
+        21.999%,
+        63%,
+        63.999%,
+        65%,
+        69.999% {
+            opacity: 0.4;
+            text-shadow: none;
+        }
+    }
+    
+    @keyframes lower {
+    
+        0%,
+        12%,
+        18.999%,
+        23%,
+        31.999%,
+        37%,
+        44.999%,
+        46%,
+        49.999%,
+        51%,
+        58.999%,
+        61%,
+        68.999%,
+        71%,
+        85.999%,
+        96%,
+        100% {
+            opacity: 0.99;
+            text-shadow: 0 0 80px red, 0 0 30px FireBrick, 0 0 6px DarkRed;
+        }
+    
+        19%,
+        22.99%,
+        32%,
+        36.999%,
+        45%,
+        45.999%,
+        50%,
+        50.99%,
+        59%,
+        60.999%,
+        69%,
+        70.999%,
+        86%,
+        95.999% {
+            opacity: 0.4;
+            text-shadow: none;
+        }
+    }
+                </code></pre>
 
+                <p>
+                    The above is a great example of complex CSS animation in action. In this example there are 2 named
+                    animation <i>'lower'</i> and <i>'upper'</i> described the keyframes at multiple point of time. The
+                    animation
+                    named upper is responsible for the animation of the first line with text <strong>MYKE</strong> and
+                    another is for <strong>MELO</strong> . In both of those animations the <code
+                        class="language-css">opacity</code> and <code class="language-css">text-shadow</code> property
+                    is being described several points of the animation cycle. The animations will run indefinitely with
+                    linear transition through keyframes. The duration of the upper animation is 11s and lower one is 10s
+                    to stage a scenario of incongruity. The interesting thing to notice here is that the animations are
+                    not being applied on the whole text but a portion.
+                </p>
+                <p>
+                    Based on popular website <a href="https://caniuse.com/css-animation" target="_blank">Can I Use?</a>,
+                    the support for CSS Animation across desktop and mobile web browser is very good. It has a
+                    <strong>95.42% </strong> Global support as of this writing. All major browsers available regardless
+                    of desktop/laptop or mobile support most of the features with great stability.
+                </p>
+                <p>
+                    CSS animation is an incredibly useful and powerful tool which can add interest or creative
+                    excitement, catch user's eye or explain things quickly and succinctly. This is the reason that the
+                    usage of CSS animation is growing rapidly on sites and in app.
+                </p>
+            </div>
 
+        </article>
 
+        <section id="video">
+            <h3 class="title">Short video</h3>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wNTcPNkzI2s"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
 
         <section id="contact">
-            
-            <h2>Contact Us:</h2>
-
+            <h3 class="title">Contact Us</h3>
             <form id="contactForm" name="contactForm" method="post" data-netlify="true">
-
                 <fieldset>
                     <legend>Contact Form</legend>
 
-
                     <div id="formElements">
+                        <!-- Name -->
+                        <label for="name">Name (Required)</label>
+                        <input type="text" id="name" name="name">
 
-                    <!-- Name -->
-                    <label for="name">Name (Required)</label> 
-                    <input type="text" id="name" name="name">
+                        <!--Email-->
+                        <label for="email">Email (Required)</label>
+                        <input type="email" id="email" name="email">
 
-                    <!--Email-->
-                    <label for="email">Email (Required)</label> 
-                    <input type="email" id="email" name="email">
-
-                    <!--phone-->
-                    <label for="phone">Phone (optional)</label> 
-                    <input type="tel" id="phone" name="phone">
+                        <!--phone-->
+                        <label for="phone">Phone (optional)</label>
+                        <input type="tel" id="phone" name="phone">
 
 
-                    <!--Phone Type-->
-                    <label for="phonetype">Phone type (optional)</label> 
-                    <select id="phonetype">
-                        <option value="" selected>Select phone type</option>
-                        <option value="Mobile">Mobile</option>
-                        <option value="Work">Work</option>
-                        <option value="Home">Home</option>
-                    </select>
+                        <!--Phone Type-->
+                        <label for="phonetype">Phone type (optional)</label>
+                        <select id="phonetype">
+                            <option value="" selected>Select phone type</option>
+                            <option value="Mobile">Mobile</option>
+                            <option value="Work">Work</option>
+                            <option value="Home">Home</option>
+                        </select>
 
-                    <!--Message-->
-                    <label for="Message">Message (optional)</label> 
-                    <textarea id="Message" name="Message" rows="8"></textarea>
+                        <!--Message-->
+                        <label for="Message">Message (optional)</label>
+                        <textarea id="Message" name="Message" rows="8"></textarea>
 
-                    <!--Reply-->
-                    <fieldset>
-                        <legend> Would you like a reply?</legend>
-
-                        <ul>
-                            <li>
-                                <input type="radio" id="message-yes" name="reply" value="Yes a reply please.">
-                                <label for="message-yes">
-                                    Yes a reply would be nice.
-                                </label>
+                        <!--Reply-->
+                        <fieldset id="reply-radio">
+                            <legend> Would you like a reply?</legend>
+                            <br>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="message-yes" name="reply" value="Yes a reply please.">
+                                    <label for="message-yes">
+                                        Yes a reply would be nice.
+                                    </label>
                                 </li>
-                            <li>
-                                <input type="radio" id="message-no" name="reply" value="No reply please" checked="true">
-                                <label for="message-no">
-                                    No, Thanks.
-                                </label>
+                                <li>
+                                    <input type="radio" id="message-no" name="reply" value="No reply please"
+                                        checked="true">
+                                    <label for="message-no">
+                                        No, Thanks.
+                                    </label>
                                 </li>
+                            </ul>
+                        </fieldset>
 
-                        </ul>
-
-
-                    </fieldset>
-
-                    <!--Submit-->
-                    <button type="submit">Send</button>
-
-
-
+                        <!--Submit-->
+                        <button type="submit">Send</button>
                     </div>
-
                 </fieldset>
 
             </form>
-
-
-
         </section>
-
 
     </main>
 
     <footer>
-
-        ©2022 - Myke Melo
-
+        ©2022 - <a href="https://github.com/RVCC-IDMX/about-me-Mykeooo">Myke Melo</a>
     </footer>
 
+    <!-- Prism Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-core.min.js"
+        integrity="sha512-9khQRAUBYEJDCDVP2yw3LRUQvjJ0Pjx0EShmaQjcHa6AXiOv6qHQu9lCAIR8O+/D8FtaCoJ2c0Tf9Xo7hYH01Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/autoloader/prism-autoloader.min.js"
+        integrity="sha512-fTl/qcO1VgvKtOMApX2PdZzkziyr2stM65GYPLGuYMnuMm1z2JLJG6XVU7C/mR+E7xBUqCivykuhlzfqxXBXbg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
+
 </html>

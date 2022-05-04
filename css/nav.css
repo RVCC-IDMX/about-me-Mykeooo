@@ -15,47 +15,79 @@ body {
     margin: 0%;
 }
 
-/* add some padding back to rest of page */
-
-main {
-    padding: 2vw;
-}
-
-
 /* navbar */
-
 .navbar {
-    background-color: #333;
-    color: whitesmoke;
+    background-color: #323131;
+    color: #F8F8F8;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    padding: 0 16px;
 }
 
 
 /* logo */
-
 .logo {
     display: flex;
     align-items: center;
 }
 
 .logo img {
-    height: 4vw;
-    width: 4vw;
+    width: 96px;
 }
 
 .logo h1 {
+    margin-left: 16px;
     font-size: 1.2em;
 
 }
 
 /* navigation list */
+/* Mobile Hamburger menu using only CSS */
+.navbar__toggle {
+    position: absolute;
+    cursor: pointer;
+    margin: -4rem 1rem;
+    right: 0;
+}
+
+.navbar__toggle svg {
+    width: 1.5rem;
+    fill: #f8f8f8;
+}
+
+.navbar__toggle .close {
+    display: none;
+}
+
+.navbar__links li {
+    list-style: none;
+    display: none;
+}
+
+.navbar__checkbox {
+    display: none;
+}
+
+.navbar__menu svg {
+    width: 1.5rem;
+    fill: #2a324b;
+}
+
+#navbar__checkbox:checked~ul.navbar__links li {
+    display: block;
+}
+
+#navbar__checkbox:checked~label.navbar__toggle .close {
+    display: block;
+}
+
+#navbar__checkbox:checked~label.navbar__toggle .menu {
+    display: none;
+}
 
 .navbar-links li {
-    list-style: none;
-    display: block;
     padding: 0.5em 0;
 }
 
@@ -66,8 +98,8 @@ main {
 */
 
 .navbar-links a {
-    color: whitesmoke;
-    background-color: #333;
+    color: #F8F8F8;
+    background-color: #323131;
     font-size: 1.5rem;
     padding: 1rem 1.25rem;
     letter-spacing: 2px;
@@ -78,10 +110,10 @@ main {
 
 .navbar-links a:hover,
 .navbar-links a:focus {
-    color: #333;
-    background-color: whitesmoke;
-    filter: invert(1);
-    border-radius: 10px;
+    color: #323131;
+    background-color: #F8F8F8;
+    /* filter: invert(1); */
+    border-radius: 6px;
     outline: none;
 }
 
@@ -92,8 +124,8 @@ min-width set to width of nav elements
 such that no text wraps 
 */
 
-@media screen (min-width: 60rem) {
-    .navbar-links{
+@media screen and (min-width: 680px) {
+    .navbar-links {
         display: flex;
         justify-content: space-between;
     }
@@ -108,4 +140,11 @@ such that no text wraps
         justify-content: space-between;
     }
 
+    .navbar li {
+        display: block;
+    }
+
+    .navbar__toggle {
+        display: none;
+    }
 }
